@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Homework assignemnt_5 for Class 133 at CCSF, for Part_1 Javascript Arrays">
+  <title>CNIT 133 || Part_1</title>
+  <link rel="stylesheet" type="text/css" href="css/main_1.css">
+</head>
+<body>
+<a href="index.html">< </a>
+<div class="main-block">
+    <h1>Registration</h1>
+    <form name="myForm">
+      <hr>
+      <div class="account-type">
+        <input type="checkbox" value="personal" id="personal_account"/>
+        <label for="radioOne">Personal</label>
+        <input type="checkbox" value="company" id="company_account" />
+        <label for="radioTwo">Company</label>
+        <p style="display: none;" id="account_val_text">Click one of the checkboxes</p>
+      </div>
+      <hr>
+      <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+      <input type="text" name="email" id="name" placeholder="Email" />
+      <p style="display: none;" id="email_val_text">Email is required</p>
+      <hr>
+      <div class="gender">
+        <input type="radio" value="Male" id="male" name="gender"/>
+        <label for="male" class="radio">Male</label>
+        <input type="radio" value="Female" id="female" name="gender" />
+        <label for="female" class="radio">Female</label>
+        <p style="display: none;" id="gender_val_text">Gender is required</p>
+      </div>
+      <hr>
+      <label>Country</label><br>
+      <select name="country" id="countries">
+      <option value="none">None</option>
+<option value="us">Us</option>
+<option value="uk">Uk</option>
+<option value="cameroon">Cameroon</option>
+<option value="canada">Canada</option>
+</select>
+<p id="country_val_text" style="display: none;">Select a country</p>
+<hr>
+      <div class="btn-block">
+        <h6>By clicking Register, you agree on our Privacy Policy</h6>
+        <button type="submit" onclick="return validateForm()">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body, ul{
+  margin: 0;
+}
+a{
+  color: black;
+}
+ul {
+  position: relative;
+  top: 30%;
+}
+li {
+  list-style-type: none;
+  padding-top: 25px;
+  font-size: 25px;
+}
+li a:hover {
+  font-size: 1.75rem;
+  color: red;
+}
+#box{
+  width: 50%;
+  height: 100vh;
+  background: #d0d6d1;
+  margin: auto;
+  text-align: center;
+}

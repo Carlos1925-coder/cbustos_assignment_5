@@ -1,0 +1,30 @@
+<!-- CARLOS A. BUSTOS -->
+<!-- CNIT 133 || Arrays -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Homework assignemnt_5 for Class 133 at CCSF, Part_3 for Javascript Arrays">
+  <title>CNIT 133 || Part_3</title> 
+  <link rel="stylesheet" type="text/css" href="css/main_3.css">
+</head>
+<body>
+  <a href="index.html">< </a>
+  <div class="main-block">
+    <h1> July/2019 census Registration</h1>
+    <form name="myForm">
+      <label for="name">Enter State Name</label>
+      <input type="text" name="state" id="name" placeholder="Alabama or AL" />
+      <p style="display: none;" id="email_val_text">the database does not have information about this state, we only have information about AL, AK, AZ, AR, CA, and CO</p>
+      <hr>
+      <h3 id="result"></h3>
+      <h3 style="display: none;" id="notFound">
+      the database does not have information about this state, we only have information about AL, AK, AZ, AR, CA, and CO
+      </h3>
+      <hr>
+    </form>
+    <button onclick="getInformation()">State Info</button>
+  </div>
+  <script src="js/main_3.js"></script>
+</body>
+</html>
